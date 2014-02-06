@@ -1,1 +1,1 @@
-//test of synchronization of commits
+//test of synchronization of commits from lab computer
