@@ -1,11 +1,10 @@
 /**
- * 
- */
-
-/**
  * @author Kurt Andres
  *
  */
+//may want to use the following for simple date output for getDate()
+//import java.text.SimpleDateFormat;
+
 public class DurationEvent implements Event {
 
 	public String name; //event name

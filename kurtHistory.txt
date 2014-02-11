@@ -1,3 +1,0 @@
-Kurt Andres Work
-
-2/5/14 Group had first meeting, began work on implementing the event. I decided to use an interface so the group has an api they can call. Then implemented getter and setter methods for Atomic and Duration Events.
