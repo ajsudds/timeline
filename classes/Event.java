@@ -2,6 +2,11 @@
  * @author Kurt Andres
  * The below attached Event interface for DurationEvent and AtomicEvent
  */
+//After reading datastructures/ and algorithms book for other class,
+//i have feeling in real project we should use abstract class so we
+//have great flexibility to add more methods and don't have to write
+//methods twice.
+
 public interface Event {
 	
 	//sets the total event except for endDate if DurationEvent
