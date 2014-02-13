@@ -8,25 +8,62 @@
 public class AtomicEvent implements Event {
 
 	public String name; //event name
-	public String startDate; //event start date
+        public String startYear;
+        public String startMonth;
+        public String startDay;
+        
+        public String endYear;
+        public String endMonth;
+        public String endDay;
+        
+	public String timelineID; //event start date as continuous string for treeMap key
 	public String description; //event description
 	public String category; //category to associate event with
 
-	public void setEvent(String n, String sD, String d, String c){
+	public void setEvent(String n, String sY, String sM, String sD, String eY, String eM, String eD, String d, String c){
 		name = n;
-		startDate = sD;
+                startYear = sY;
+                startMonth = sM;
+                startDay = sD;
+                endYear = "null";
+                endMonth = "null";
+                endDay = "null";
 		description = d;
 		category = c;
-	}
+        }
 
 	public void setName(String n){
 		name = n;
 
 	}
 
-	public void setStartDate(String sD){
-		startDate= sD;
+	public void setStartYear(String sD){
+		startYear= sD;
 
+	}
+        
+        public void setStartMonth(String sD){
+		startMonth= sD;
+
+	}
+        
+        public void setStartDay(String sD){
+		startDay= sD;
+
+	}
+        
+        public void setEndYear(String sD){
+		endYear= sD;
+
+	}
+        
+        public void setEndMonth(String sD){
+		endMonth= sD;
+
+	}
+        
+        public void setEndDay(String sD){
+		endDay= sD;
 	}
 
 	public void setDescription(String d){

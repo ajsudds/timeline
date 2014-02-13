@@ -8,20 +8,35 @@
 public class DurationEvent implements Event {
 
 	public String name; //event name
-	public String startDate; //event start date
+        
+        public String endYear;
+        public String endMonth;
+        public String endDay;
+        
+        public String startYear;
+        public String startMonth;
+        public String startDay;
+        
+	public String timelineID; //event start date as continuous string
+        
 	public String description; //event description
 	public String category; //category to associate event with
 	public String endDate;
 
-	public void setEvent(String n, String sD, String d, String c) {
+        public void setEvent(String n, String sY, String sM, String sD, String eY, String eM, String eD, String d, String c){
 		name = n;
-		startDate = sD;
+                startYear = sY;
+                startMonth = sM;
+                startDay = sD;
+                endYear = eY;
+                endMonth = eM;
+                endDay = eD;
 		description = d;
 		category = c;
 	}
 
 	private void setEndDate(String eD) {
-		endDate = eD;
+		endDay = eD;
 	}
 
 	public void setName(String n) {
