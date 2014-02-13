@@ -8,7 +8,7 @@ package classes;
 public interface Event {
 
 	//sets the total event except for endDate if DurationEvent
-	public void setEvent(String n, int sY, int sM, int sD, int eY, int eM, int eD, String d, String c);
+	public void setEvent(String name, int startYear, int startMonth, int startDay, int endYear, int endMonth, int endDay, String description);
 
 	//set event name
 	public void setName(String n);
@@ -37,9 +37,6 @@ public interface Event {
 	//sets event Description
 	public void setDescription(String d);
 
-	//sets event category
-	public void setCategory(String c);
-
 	//return event Name
 	public String getName();
 
@@ -67,6 +64,4 @@ public interface Event {
 	//returns event Description
 	public String getDescription();
 
-	//returns event category
-	public String getCategory();
 }

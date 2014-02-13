@@ -11,7 +11,6 @@ public class AtomicEvent implements Event {
 
 	public String name; //event name
         public String description; //event description
-	public String category; //category to associate event with
         
         public int startYear;
         public int startMonth;
@@ -23,7 +22,7 @@ public class AtomicEvent implements Event {
         
 	public int timelineID; //event start date as continuous string for treeMap key
 
-	public void setEvent(String n, int sY, int sM, int sD, int eY, int eM, int eD, String d, String c){
+	public void setEvent(String n, int sY, int sM, int sD, int eY, int eM, int eD, String d){
 		name = n;
                 startYear = sY;
                 startMonth = sM;
@@ -32,7 +31,6 @@ public class AtomicEvent implements Event {
                 endMonth = 0;
                 endDay = 0;
 		description = d;
-		category = c;
                 
                 //set timelineID
                 String tempIDstring;
@@ -85,10 +83,6 @@ public class AtomicEvent implements Event {
 		description = d;
 	}
 
-	public void setCategory(String c){
-		category = c;	
-	}
-
 	public String getName(){
 		return name;
 	}
@@ -127,9 +121,4 @@ public class AtomicEvent implements Event {
 	public String getDescription(){
 		return description;
 	}
-
-	public String getCategory(){
-		return category;
-	}
-
 }

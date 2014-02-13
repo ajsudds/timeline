@@ -10,7 +10,6 @@ package classes;
 public class DurationEvent implements Event {
 
 	public String name; //event name
-        public String category; //category to associate event with
 	public String description; //event description
         
         public int endYear;
@@ -25,7 +24,7 @@ public class DurationEvent implements Event {
         
 
 
-        public void setEvent(String n, int sY, int sM, int sD, int eY, int eM, int eD, String d, String c){
+        public void setEvent(String n, int sY, int sM, int sD, int eY, int eM, int eD, String d){
 		name = n;
                 startYear = sY;
                 startMonth = sM;
@@ -34,7 +33,6 @@ public class DurationEvent implements Event {
                 endMonth = eM;
                 endDay = eD;
 		description = d;
-		category = c;
                 
                 String tempIDstring;
                 tempIDstring = Integer.toString(sY)+Integer.toString(sM)+Integer.toString(sD);
@@ -84,10 +82,6 @@ public class DurationEvent implements Event {
 		description = d;
 	}
         
-	public void setCategory(String c){
-		category = c;	
-	}
-
 	public String getName(){
 		return name;
 	}
@@ -122,9 +116,4 @@ public class DurationEvent implements Event {
 	public String getDescription() {
 		return description;
 	}
-
-	public String getCategory() {
-		return category;
-	}
-
 }
