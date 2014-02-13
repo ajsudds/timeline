@@ -1,3 +1,5 @@
+package classes;
+
 import java.util.*;
 
 
@@ -21,7 +23,7 @@ public class Timeline {
 	//checks if start date and name are same, then removes event
 	//NOTE, returns String to output to console depending on success or not
 	public String removeEvent(Event e){
-		if(timelineEvents.containsKey(e.getID()) && e.getName()== timelineEvents.get(e.getID()).getName()){
+		if(timelineEvents.containsKey(e.getID()) && e.getName().equals(timelineEvents.get(e.getID()).getName())){
 			timelineEvents.remove(e.getID());
 			return e.getName() + " successfuly removed."; 
 		}else

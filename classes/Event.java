@@ -1,3 +1,5 @@
+package classes;
+
 /**
  * @author Kurt Andres
  * The below attached Event interface for DurationEvent and AtomicEvent
@@ -12,7 +14,7 @@ public interface Event {
 	public void setName(String n);
         
         //sets event timelineID
-        public void setID();
+        public void setID(int sY, int sM, int sD);
 
 	//set start year
 	public void setStartYear(int sY);
@@ -45,7 +47,7 @@ public interface Event {
         public int getStartYear();
         
         //return start month
-        public int getStartmonth();
+        public int getStartMonth();
         
         //return start day
         public int getStartDay();
