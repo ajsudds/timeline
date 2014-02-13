@@ -2,38 +2,37 @@
  * @author Kurt Andres
  * The below attached Event interface for DurationEvent and AtomicEvent
  */
-//After reading datastructures/ and algorithms book for other class,
-//i have feeling in real project we should use abstract class so we
-//have great flexibility to add more methods and don't have to write
-//methods twice.
 
 public interface Event {
 
 	//sets the total event except for endDate if DurationEvent
-	public void setEvent(String n, String sY, String sM, String sD, String eY, String eM, String eD, String d, String c);
+	public void setEvent(String n, int sY, int sM, int sD, int eY, int eM, int eD, String d, String c);
 
 	//set event name
 	public void setName(String n);
+        
+        //sets event timelineID
+        public void setID();
 
 	//set start year
-	public void setStartYear(String sY);
+	public void setStartYear(int sY);
 
 	//set start month
-	public void setStartMonth(String sM);
+	public void setStartMonth(int sM);
 
 	//set start day
-	public void setStartDay(String sD);
+	public void setStartDay(int sD);
 
 	//set end year
-	public void setEndYear(String sY);
+	public void setEndYear(int sY);
 
 	//set end month
-	public void setEndMonth(String sM);
+	public void setEndMonth(int sM);
 
 	//set end day
-	public void setEndDay(String sD);
+	public void setEndDay(int sD);
 
-	//sets even Description
+	//sets event Description
 	public void setDescription(String d);
 
 	//sets event category
@@ -42,9 +41,27 @@ public interface Event {
 	//return event Name
 	public String getName();
 
-	//returns event StartDate
-	public String getStartDate();
-
+	//return event StartYear
+        public int getStartYear();
+        
+        //return start month
+        public int getStartmonth();
+        
+        //return start day
+        public int getStartDay();
+        
+        //return end year
+        public int getEndYear();
+        
+        //return end month
+        public int getEndMonth();
+        
+        //return end day
+        public int getEndDay();
+        
+        //return timelineID
+        public int getID();
+        
 	//returns event Description
 	public String getDescription();
 
